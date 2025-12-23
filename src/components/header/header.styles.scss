@@ -1,0 +1,46 @@
+@use '@/styles/base/variables' as *;
+@use "sass:color";
+
+.header {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+  &__wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 22px 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 93px;
+    height: 51px;
+  }
+
+  &__nav  {
+    max-width: 290px;
+    width: 100%;
+
+    .navigation {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__item {
+        padding: 10px;
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        color: $color-accent;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: color.adjust($color-accent, $lightness: -15%);
+        }
+      }
+    } 
+  }
+}
