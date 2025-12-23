@@ -1,0 +1,13 @@
+export function createElement(tag, options = {}) {
+  const el = document.createElement(tag)
+
+  if (options.className) el.className = options.className
+  if (options.text) el.textContent = options.text
+  if (options.attrs) {
+    Object.entries(options.attrs).forEach(([key, value]) =>
+      el.setAttribute(key, value)
+    )
+  }
+
+  return el
+}
