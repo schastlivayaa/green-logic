@@ -5,7 +5,7 @@
   &__wrapper {
     max-width: 1440px;
     margin: auto;
-    padding: 50px 30px 20px 100px;
+    padding: 0 30px 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +26,7 @@
     font-size: 4.8rem;
     color: $color-accent;
     line-height: 6.5rem;
+    font-weight: 400;
   }
 
   &__content {
