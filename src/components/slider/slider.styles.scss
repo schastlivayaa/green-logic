@@ -1,0 +1,115 @@
+@use '@/styles/base/variables' as *;
+
+.slider {
+  &__wrapper {
+    max-width: 1440px;
+    padding: 45px 100px;
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+    color: $color-accent;
+    padding-bottom: 10px;
+  }
+
+  &__viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__slide {
+    min-width: 100%;
+    min-height: 500px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .slide {
+      &__bg {
+        display: flex;
+        background-color: $color-additional;
+        border-radius: 30px;
+        padding: 60px 90px;
+        min-height: 420px;
+      }
+
+      &__content {
+        padding: 0 260px 0 0;
+      }
+
+      &__image {
+        position: absolute;
+        right: 90px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 30px;
+        width: 240px;
+        height: 500px;
+        border: 2px solid $color-accent;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      &__title {
+        font-family: $font-primary;
+        font-size: 3.8rem;
+        font-weight: 400;
+        color: $color-accent;
+        padding-bottom: 30px;
+      }
+
+      &__text {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 4.2rem;
+        font-family: $font-secondary;
+        color: $color-text;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__dots {
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__dot {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: $color-main-light;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &_active {
+      background: $color-main-dark;
+    }
+  }
+}
+
+
