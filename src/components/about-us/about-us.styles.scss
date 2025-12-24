@@ -7,6 +7,7 @@
 .about-us {
   &__wrapper {
     padding: 45px 160px;
+    margin: auto;
     max-width: 1440px;
     text-align: center;
     text-transform: uppercase;
@@ -31,7 +32,7 @@
     font-size: 2rem;
     white-space: pre-line;
   }
-  
+
   &__percent {
     font-family: $font-primary;
     font-size: 3.6rem;
