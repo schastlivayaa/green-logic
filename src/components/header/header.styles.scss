@@ -38,7 +38,7 @@
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          color: color.adjust($color-accent, $lightness: -15%);
+          color: color.adjust($color-accent, $lightness: -10%);
         }
       }
     } 
