@@ -1,0 +1,39 @@
+@use '@/styles/base/variables' as *;
+
+#about-us {
+  background-color: $color-main-dark;
+}
+
+.about-us {
+  &__wrapper {
+    padding: 45px 160px;
+    max-width: 1440px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-bg;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+  }
+
+  &__content {
+    padding-top: 30px;
+    line-height: 4rem;
+  }
+
+  &__text {
+    font-family: $font-secondary;
+    font-size: 2rem;
+    white-space: pre-line;
+  }
+  
+  &__percent {
+    font-family: $font-primary;
+    font-size: 3.6rem;
+  }
+}
