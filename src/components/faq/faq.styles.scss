@@ -1,0 +1,88 @@
+@use '@/styles/base/variables' as *;
+
+.faq {
+  &__wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 45px 160px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-size: 4.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: $color-accent;
+    padding-bottom: 20px;
+  }
+
+  &__item {
+    font-family: $font-secondary;
+    font-size: 2.4rem;
+    color: $color-main-dark;
+    border-bottom: 1px solid $color-main-dark;
+    padding: 10px 0;
+  }
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &__icon {
+      position: relative;
+      display: inline-block;
+      width: 35px;
+      height: 26px;
+      flex-shrink: 0;
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        // left: 50%;
+        width: 23px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: $color-accent;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &::before {
+        left: 0;
+        transform: translateY(-50%) rotate(55deg);
+      }
+
+      &::after {
+        right: 0;
+        transform: translateY(-50%) rotate(-55deg);
+      }
+    }
+
+    details[open] &__icon::before {
+      width: 26px;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    details[open] &__icon::after {
+      width: 26px;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+  &__answer {
+    text-transform: initial;
+    line-height: 3.5rem;
+  }
+}

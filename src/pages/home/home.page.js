@@ -3,6 +3,7 @@ import { createHero } from '@/components/hero/hero.component';
 import { createAboutUs } from '@/components/about-us/about-us.component';
 import { createSlider } from '../../components/slider/slider.component';
 import { createFooter } from '../../components/footer/footer.component';
+import { createFaq } from '../../components/faq/faq.component';
 
 export function renderHomePage(root) {
   root.append(
@@ -10,6 +11,7 @@ export function renderHomePage(root) {
     createHero(),
     createAboutUs(),
     createSlider(),
+    createFaq(),
     createFooter()
   );
 }
