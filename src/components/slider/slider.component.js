@@ -2,6 +2,7 @@ import './slider.styles.scss';
 import { createElement } from '../../utils/create-element';
 import robot1 from '@/assets/images/robot1.png';
 import robot2 from '@/assets/images/robot2.png';
+import robot3 from '@/assets/images/robot3.png';
 
 export function createSlider() {
   let currentSlide = 0;
@@ -22,7 +23,7 @@ export function createSlider() {
     {
       title: 'ПОЛУЧАЙ',
       text: 'Получай игровую валюту Экоины и трать их на прокачку и развитие своего эко-питомца. Сдал больше — получил больше!',
-      imgSrc: robot1,
+      imgSrc: robot3,
       imgAlt: 'Пример работы приложения',
     },
   ];
