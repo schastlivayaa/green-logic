@@ -6,7 +6,7 @@
 
 .about-us {
   &__wrapper {
-    padding: 45px 160px;
+    padding: 4.5rem;
     margin: auto;
     max-width: 1440px;
     text-align: center;
@@ -25,6 +25,9 @@
   &__content {
     padding-top: 30px;
     line-height: 4rem;
+    max-width: 1110px;
+    width: 100%;
+    margin: auto;
   }
 
   &__text {

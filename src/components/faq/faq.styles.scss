@@ -4,7 +4,7 @@
   &__wrapper {
     max-width: 1440px;
     margin: auto;
-    padding: 45px 160px;
+    padding: 4.5rem;
     text-transform: uppercase;
   }
 
@@ -22,14 +22,17 @@
     font-size: 2.4rem;
     color: $color-main-dark;
     border-bottom: 1px solid $color-main-dark;
-    padding: 10px 0;
+    padding: 1rem 0;
+    max-width: 1074px;
+    width: 100%;
+    margin: auto;
   }
 
   &__question {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 1.5rem 0;
     list-style: none;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -41,8 +44,8 @@
     &__icon {
       position: relative;
       display: inline-block;
-      width: 35px;
-      height: 26px;
+      width: 3.5rem;
+      height: 2.6rem;
       flex-shrink: 0;
 
       &::before, &::after {
@@ -50,7 +53,7 @@
         position: absolute;
         top: 50%;
         // left: 50%;
-        width: 23px;
+        width: 2.3rem;
         height: 3px;
         border-radius: 5px;
         background-color: $color-accent;
@@ -69,13 +72,13 @@
     }
 
     details[open] &__icon::before {
-      width: 26px;
+      width: 2.6rem;
       left: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
     }
 
     details[open] &__icon::after {
-      width: 26px;
+      width: 2.6rem;
       left: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
     }

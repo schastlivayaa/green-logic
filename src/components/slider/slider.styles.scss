@@ -3,7 +3,7 @@
 .slider {
   &__wrapper {
     max-width: 1440px;
-    padding: 45px 100px;
+    padding: 4.5rem;
     margin: auto;
     text-transform: uppercase;
   }
@@ -20,7 +20,9 @@
 
   &__viewport {
     overflow: hidden;
+    max-width: 1220px;
     width: 100%;
+    margin: auto;
   }
 
   &__track {
@@ -30,7 +32,7 @@
 
   &__slide {
     min-width: 100%;
-    min-height: 500px;
+    min-height: 50rem;
     text-transform: uppercase;
     position: relative;
     display: flex;
@@ -41,22 +43,22 @@
         display: flex;
         background-color: $color-additional;
         border-radius: 30px;
-        padding: 60px 90px;
-        min-height: 420px;
+        padding: 6rem 9rem;
+        min-height: 42rem;
       }
 
       &__content {
-        padding: 0 260px 0 0;
+        padding: 0 30rem 0 0;
       }
 
       &__image {
         position: absolute;
-        right: 90px;
+        right: 9rem;
         top: 50%;
         transform: translateY(-50%);
         border-radius: 30px;
-        width: 240px;
-        height: 500px;
+        width: 24rem;
+        height: 50rem;
         border: 2px solid $color-accent;
 
         img {
@@ -76,7 +78,7 @@
       }
 
       &__text {
-        font-size: 3rem;
+        font-size: 2.6rem;
         font-weight: 600;
         line-height: 4.2rem;
         font-family: $font-secondary;
@@ -87,21 +89,24 @@
 
   &__buttons {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+    max-width: 1220px;
+    width: 100%;
+    margin: auto;
   }
 
   &__dots {
-    margin-top: 25px;
+    margin-top: 2.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 2.5rem;
   }
 
   &__dot {
     display: inline-block;
-    width: 34px;
-    height: 34px;
+    width: 3.4rem;
+    height: 3.4rem;
     background: $color-main-light;
     border-radius: 50%;
     cursor: pointer;
@@ -111,5 +116,6 @@
     }
   }
 }
+
 
 

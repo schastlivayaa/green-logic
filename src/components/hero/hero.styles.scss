@@ -5,16 +5,19 @@
   &__wrapper {
     max-width: 1440px;
     margin: auto;
-    padding: 0 30px 20px 100px;
+    padding: 0 3rem 0 4.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:end;
     align-items: center;
   }
 
   &__container {
+    max-width: 865px;
+    width: 100%;
     flex: 2;
     font-family: $font-primary;
     text-transform: uppercase;
+    padding: 4.5rem 0;
   }
 
   &__image {
@@ -35,7 +38,7 @@
     font-weight: 600;
     color: $color-main-dark;
     line-height: 3.1rem;
-    padding: 30px 0;
+    padding: 3rem 0;
     white-space: pre-line;
   }
 }

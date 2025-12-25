@@ -19,9 +19,20 @@ export function createHeader() {
   const nav = createElement('nav', { className: 'header__nav' });
   const ul = createElement('ul', { className: 'navigation' });
 
-  const navItems = ['Для инвесторов', 'FAQ'];
-  navItems.forEach((text) => {
-    const li = createElement('li', { className: 'navigation__item', text });
+  const navItems = [
+    {
+      text: 'Для инвесторов',
+      href: '/',
+    },
+    {
+      text: 'FAQ',
+      href: '#faq',
+    }
+  ];
+  navItems.forEach(({ text, href }) => {
+    const li = createElement('li', { className: 'navigation__item' });
+    const link = createElement('a', { className: 'navigation__link', attrs: { href }, text });
+    li.append(link);
     ul.append(li);
   });
 

@@ -1,6 +1,29 @@
 @use './variables' as *;
 @use "sass:color";
 
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  }
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 510px) {
+  html {
+    font-size: 4px;
+  }
+}
+
 body {
   background-color: $color-bg;
 }

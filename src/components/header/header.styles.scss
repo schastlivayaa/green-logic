@@ -5,21 +5,21 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
   &__wrapper {
-    max-width: 1440px;
+    max-width: 1360px;
     margin: auto;
-    padding: 22px 100px;
+    padding: 2.2rem 4.5rem;
     display: flex;
     justify-content: space-between;
   }
 
   &__logo {
     display: inline-block;
-    width: 93px;
-    height: 51px;
+    width: 9.3rem;
+    height: 5.1rem;
   }
 
   &__nav  {
-    max-width: 290px;
+    max-width: 29rem;
     width: 100%;
 
     .navigation {
@@ -28,14 +28,13 @@
       justify-content: space-between;
       align-items: center;
 
-      &__item {
+      &__link {
         padding: 10px;
+        transition: all 0.3s ease-in-out;
+        color: $color-accent;
         font-family: $font-primary;
         font-size: 1.6rem;
-        color: $color-accent;
         text-transform: uppercase;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
 
         &:hover {
           color: color.adjust($color-accent, $lightness: -10%);
