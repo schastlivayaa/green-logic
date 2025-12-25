@@ -1,0 +1,61 @@
+@use "sass:color";
+@use '@/styles/base/variables' as *;
+
+.top {
+  &__wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-size: 4.8rem;
+    font-weight: 400;
+    color: $color-accent;
+    padding-bottom: 20px;
+  }
+
+  &__table {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    border-radius: 30px;
+    border-collapse: collapse;
+    overflow: hidden;
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 2.4rem;
+    table-layout: fixed;
+
+    thead {
+      background-color: $color-main-dark;
+      color: $color-bg; 
+    }
+
+    tbody {
+      color: $color-text;
+    background-color: $color-additional;
+    }
+
+    tr {
+      th { padding: 25px 0; }
+      td { padding: 20px 0; }
+
+      th:nth-child(1),
+      td:nth-child(1),
+      th:nth-child(3),
+      td:nth-child(3) {
+        width: 25%;
+      }
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: 50%;
+      }
+
+      
+    }
+  }
+}
