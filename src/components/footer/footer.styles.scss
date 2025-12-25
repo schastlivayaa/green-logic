@@ -1,0 +1,58 @@
+@use '@/styles/base/variables' as *;
+
+.footer {
+  background-color: $color-main-dark;
+  padding-bottom: 20px;
+
+  &__wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 45px 160px;
+  }
+
+  &__rights {
+    border-top: 2px solid $color-bg;
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    color: $color-bg;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+
+  &__media {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__link {
+    font-family: $font-secondary;
+    font-size: 2rem;
+    color: $color-bg;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &_email {
+      border-bottom: 1px solid $color-bg;
+      &:hover {
+        border-color: $color-accent;
+      }
+    }
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
